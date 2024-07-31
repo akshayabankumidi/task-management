@@ -1,7 +1,7 @@
 # Task Management API Documentation
 
 ## Base URL
-`http://api.taskmanager.com/v1`
+
 
 ## Authentication
 All endpoints require a valid JWT token in the Authorization header:
@@ -65,9 +65,7 @@ All endpoints require a valid JWT token in the Authorization header:
           "updated_at": "string"
         }
       ],
-      "total": "integer",
-      "page": "integer",
-      "limit": "integer"
+      "total": "integer"
     }
     ```
 
@@ -90,7 +88,8 @@ All endpoints require a valid JWT token in the Authorization header:
 - **URL**: `/tasks/:id`
 - **Method**: `DELETE`
 - **Response**:
-  - Status: 204 No Content
+  - Status: 204
+  - Body: Successfully deleted {deleted_id}
 
 ### 6. Update Task Status
 - **URL**: `/tasks/:id/status`
@@ -136,6 +135,5 @@ Error response body:
 ```json
 {
   "error": "string (error message)",
-  "details": "string (optional, additional error details)"
 }
 ```
