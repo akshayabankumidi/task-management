@@ -7,5 +7,4 @@ router.get('/', taskController.getAllTasks);
 router.get('/:id', taskController.getTaskById);
 router.put('/:id', taskController.updateTask);
 router.delete('/:id', taskController.deleteTask);
-router.get('/',testController.sayHello);
 module.exports = router;
