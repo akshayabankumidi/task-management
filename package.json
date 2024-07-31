@@ -1,0 +1,25 @@
+{
+    "name": "task-management-backend",
+    "version": "1.0.0",
+    "description": "Backend for a Task Management System",
+    "main": "src/server.js",
+    "scripts": {
+      "start": "node src/server.js",
+      "dev": "nodemon src/server.js",
+      "test-db": "node src/scripts/testDbConnection.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": ["task", "management", "backend", "api"],
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1",
+      "pg": "^8.7.1",
+      "bcrypt": "^5.0.1",
+      "jsonwebtoken": "^8.5.1",
+      "dotenv": "^10.0.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.12"
+    }
+  }
